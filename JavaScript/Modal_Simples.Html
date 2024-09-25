@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+    .modal-open {
+      display: block;
+    }
+  </style>
+  <title>Modal Simples</title>
+</head>
+<body>
+  <button onclick="document.getElementById('myModal').classList.add('modal-open')">Abrir Modal</button>
+  
+  <div id="myModal" class="modal">
+    <p>Este é um modal!</p>
+    <button onclick="document.getElementById('myModal').classList.remove('modal-open')">Fechar</button>
+  </div>
+</body>
+</html>

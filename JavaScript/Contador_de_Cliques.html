@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Cliques</title>
+</head>
+<body>
+  <p>Clique no botão: <span id="count">0</span></p>
+  <button onclick="increment()">Clique!</button>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById('count').textContent = count;
+    }
+  </script>
+</body>
+</html>
